@@ -1,18 +1,17 @@
 # Advanced String Algorithms in Python
 
-[![Status](https://img.shields.io/badge/status-portfolio%20project-475569?style=for-the-badge)]()
-[![Tests](https://img.shields.io/badge/tests-pytest-2ea44f?style=for-the-badge)]()
+[![Type](https://img.shields.io/badge/Type-Coursework_Rebuild-2563eb?style=for-the-badge)](#coursework-provenance)
+[![Tests](https://img.shields.io/badge/tests-pytest-2ea44f?style=for-the-badge)](#testing)
 [![License](https://img.shields.io/badge/license-MIT-1e5eff?style=for-the-badge)](LICENSE)
 
 **English** · [简体中文](README.zh-CN.md)
 
-A compact portfolio of advanced string-processing algorithms implemented in
-pure Python: **Z-based exact matching, BWT-backed approximate matching,
-Ukkonen suffix trees with LCP extraction, and Rabin-Karp with Miller-Rabin
-prime generation**.
+Four advanced string-processing algorithms implemented in pure Python:
+**Z-based exact matching, BWT-backed approximate matching, Ukkonen suffix trees
+with LCP extraction, and Rabin-Karp with Miller-Rabin prime generation**.
 
-This repository is a cleaned and refactored showcase derived from completed
-advanced-algorithms coursework. It intentionally excludes assignment
+The code started as completed advanced-algorithms coursework and was cleaned
+up and refactored into a standalone package. It intentionally excludes assignment
 specifications, marking feedback, reports, student identifiers, revision
 materials, and other course resources.
 
@@ -50,10 +49,10 @@ python examples/demo.py
 
 ```python
 from advanced_string_algorithms import (
-exact_match,
-approximate_match,
-lcp_array,
-rabin_karp_match,
+    exact_match,
+    approximate_match,
+    lcp_array,
+    rabin_karp_match,
 )
 
 print(exact_match("bananabanana", "ana"))
@@ -74,17 +73,18 @@ print(approximate_match("the quack brown fox", "quick"))
 ```text
 advanced-string-algorithms/
 ├── src/advanced_string_algorithms/
-│ ├── __init__.py
-│ ├── z_match.py
-│ ├── bwt_approx.py
-│ ├── suffix_tree_lcp.py
-│ └── rabin_karp_prime.py
+│   ├── __init__.py
+│   ├── z_match.py
+│   ├── bwt_approx.py
+│   ├── suffix_tree_lcp.py
+│   └── rabin_karp_prime.py
 ├── tests/
-│ └── test_algorithms.py
+│   └── test_algorithms.py
 ├── examples/
-│ └── demo.py
+│   └── demo.py
 ├── ALGORITHMS.md
 ├── pyproject.toml
+├── README.md
 └── README.zh-CN.md
 ```
 
@@ -120,7 +120,7 @@ pytest -q
 
 The underlying ideas and initial implementations originated in completed
 university coursework and were later reorganized into this standalone
-portfolio repository. No assignment brief, official solution, marking
+repository. No assignment brief, official solution, marking
 material, or private course resource is included.
 
 This repository is intended to demonstrate my implementation and algorithmic
@@ -128,4 +128,4 @@ reasoning, not to distribute course assessment material.
 
 ## License
 
-MIT
+MIT, see [LICENSE](LICENSE).
